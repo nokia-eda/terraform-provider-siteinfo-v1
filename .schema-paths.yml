@@ -1,0 +1,296 @@
+app_group:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com
+      method: GET
+
+intent_targets:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}/_topology
+      method: POST
+
+resource_history:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1
+      method: GET
+
+status:
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: DELETE
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: DELETE
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: DELETE
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: DELETE
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.siteinfo.v1.banner:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+      method: POST
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: GET
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: PUT
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: PATCH
+
+com.nokia.eda.siteinfo.v1.banner_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/banners
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+      method: GET
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+      method: DELETE
+
+com.nokia.eda.siteinfo.v1.banner_deleted_resources:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/_deleted
+      method: GET
+
+com.nokia.eda.siteinfo.v1.dns_client:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+      method: POST
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: GET
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: PUT
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: PATCH
+
+com.nokia.eda.siteinfo.v1.dns_client_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/dnsclients
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+      method: GET
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+      method: DELETE
+
+com.nokia.eda.siteinfo.v1.dns_client_state:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+      method: POST
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: GET
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: PUT
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: PATCH
+
+com.nokia.eda.siteinfo.v1.dns_client_state_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/dnsclientstates
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+      method: GET
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+      method: DELETE
+
+com.nokia.eda.siteinfo.v1.dns_client_state_deleted_resources:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/_deleted
+      method: GET
+
+com.nokia.eda.siteinfo.v1.dns_client_deleted_resources:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/_deleted
+      method: GET
+
+com.nokia.eda.siteinfo.v1.default_mtu:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+      method: POST
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: GET
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: PUT
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: PATCH
+
+com.nokia.eda.siteinfo.v1.default_mtu_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/defaultmtus
+      method: GET
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+      method: GET
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+      method: DELETE
+
+com.nokia.eda.siteinfo.v1.default_mtu_deleted_resources:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/_deleted
+      method: GET
+
+com.nokia.eda.siteinfo.v1.system_load_balancer:
+  - create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+      method: POST
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: GET
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: PUT
+  - update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: PATCH
+
+com.nokia.eda.siteinfo.v1.system_load_balancer_list:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+      method: GET
+  - delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+      method: DELETE
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/systemloadbalancers
+      method: GET
+
+com.nokia.eda.siteinfo.v1.system_load_balancer_deleted_resources:
+  - read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/_deleted
+      method: GET
+
+totalPaths: 38
+totalSchemas: 80
+usedSchemas: 22
+unusedSchemas: 58
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorResponse
+  - IntentTarget
+  - K8SPatchOp
+  - OverlayState
+  - Patch
+  - Resource
+  - ResourceHistoryEntry
+  - ResourceTopology
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
+  - TopoElemMetadata
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
+  - TopoOverlayNodeState
+  - TopoOverlayValue
+  - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
+  - Topology
+  - com.nokia.eda.siteinfo.v1.Banner_DeletedResourceEntry
+  - com.nokia.eda.siteinfo.v1.Banner_alarms
+  - com.nokia.eda.siteinfo.v1.Banner_deviations
+  - com.nokia.eda.siteinfo.v1.Banner_metadata
+  - com.nokia.eda.siteinfo.v1.DNSClientState_DeletedResourceEntry
+  - com.nokia.eda.siteinfo.v1.DNSClientState_alarms
+  - com.nokia.eda.siteinfo.v1.DNSClientState_deviations
+  - com.nokia.eda.siteinfo.v1.DNSClientState_metadata
+  - com.nokia.eda.siteinfo.v1.DNSClient_DeletedResourceEntry
+  - com.nokia.eda.siteinfo.v1.DNSClient_alarms
+  - com.nokia.eda.siteinfo.v1.DNSClient_deviations
+  - com.nokia.eda.siteinfo.v1.DNSClient_metadata
+  - com.nokia.eda.siteinfo.v1.DefaultMTU_DeletedResourceEntry
+  - com.nokia.eda.siteinfo.v1.DefaultMTU_alarms
+  - com.nokia.eda.siteinfo.v1.DefaultMTU_deviations
+  - com.nokia.eda.siteinfo.v1.DefaultMTU_metadata
+  - com.nokia.eda.siteinfo.v1.SystemLoadBalancer_DeletedResourceEntry
+  - com.nokia.eda.siteinfo.v1.SystemLoadBalancer_alarms
+  - com.nokia.eda.siteinfo.v1.SystemLoadBalancer_deviations
+  - com.nokia.eda.siteinfo.v1.SystemLoadBalancer_metadata

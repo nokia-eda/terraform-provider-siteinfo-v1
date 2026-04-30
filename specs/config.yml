@@ -1,0 +1,134 @@
+provider:
+  name: siteinfo
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/siteinfo.eda.nokia.com
+      method: GET
+
+  banner:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: GET
+
+  banner_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+      method: GET
+
+  default_mtu:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: GET
+
+  default_mtu_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+      method: GET
+
+  dns_client:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: GET
+
+  dns_client_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+      method: GET
+
+  dns_client_state:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: GET
+
+  dns_client_state_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1
+      method: GET
+
+  system_load_balancer:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: GET
+
+  system_load_balancer_list:
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+      method: GET
+
+resources:
+  banner:
+    create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+      method: POST
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: GET
+    update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: PUT
+    delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+      method: DELETE
+
+  default_mtu:
+    create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+      method: POST
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: GET
+    update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: PUT
+    delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+      method: DELETE
+
+  dns_client:
+    create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+      method: POST
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: GET
+    update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: PUT
+    delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+      method: DELETE
+
+  dns_client_state:
+    create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+      method: POST
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: GET
+    update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: PUT
+    delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+      method: DELETE
+
+  system_load_balancer:
+    create:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+      method: POST
+    read:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: GET
+    update:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: PUT
+    delete:
+      path: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+      method: DELETE
