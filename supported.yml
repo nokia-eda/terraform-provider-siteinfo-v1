@@ -1,0 +1,74 @@
+datasources:
+  - model_name: app_group
+    oas_endpoint: /apps/siteinfo.eda.nokia.com
+    oas_schema: AppGroup
+  - model_name: resource_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1
+    oas_schema: ResourceList
+  - model_name: banner_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+    oas_schema: com.nokia.eda.siteinfo.v1.BannerList
+  - model_name: banner
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}
+    oas_schema: com.nokia.eda.siteinfo.v1.Banner
+  - model_name: default_mtu_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+    oas_schema: com.nokia.eda.siteinfo.v1.DefaultMTUList
+  - model_name: default_mtu
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/{name}
+    oas_schema: com.nokia.eda.siteinfo.v1.DefaultMTU
+  - model_name: dns_client_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClientList
+  - model_name: dns_client
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/{name}
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClient
+  - model_name: dns_client_state_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClientStateList
+  - model_name: dns_client_state
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/{name}
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClientState
+  - model_name: system_load_balancer_list
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+    oas_schema: com.nokia.eda.siteinfo.v1.SystemLoadBalancerList
+  - model_name: system_load_balancer
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/{name}
+    oas_schema: com.nokia.eda.siteinfo.v1.SystemLoadBalancer
+
+resources:
+  - model_name: banner
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners
+    oas_schema: com.nokia.eda.siteinfo.v1.Banner
+  - model_name: default_mtu
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus
+    oas_schema: com.nokia.eda.siteinfo.v1.DefaultMTU
+  - model_name: dns_client
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClient
+  - model_name: dns_client_state
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates
+    oas_schema: com.nokia.eda.siteinfo.v1.DNSClientState
+  - model_name: system_load_balancer
+    oas_endpoint: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers
+    oas_schema: com.nokia.eda.siteinfo.v1.SystemLoadBalancer
+
+qualified:
+  datasources:
+    - oas_schema: IntentTargets
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}/_targets
+    - oas_schema: ResourceHistory
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/{name}/_revs
+    - oas_schema: UIResult
+      get: /apps/siteinfo.eda.nokia.com/v1/_ui/{pathname}
+    - oas_schema: com.nokia.eda.siteinfo.v1.Banner_DeletedResources
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/banners/_deleted
+    - oas_schema: com.nokia.eda.siteinfo.v1.DNSClientState_DeletedResources
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclientstates/_deleted
+    - oas_schema: com.nokia.eda.siteinfo.v1.DNSClient_DeletedResources
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/dnsclients/_deleted
+    - oas_schema: com.nokia.eda.siteinfo.v1.DefaultMTU_DeletedResources
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/defaultmtus/_deleted
+    - oas_schema: com.nokia.eda.siteinfo.v1.SystemLoadBalancer_DeletedResources
+      get: /apps/siteinfo.eda.nokia.com/v1/namespaces/{namespace}/systemloadbalancers/_deleted
+  resources:
