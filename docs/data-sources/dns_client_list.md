@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) DNSClientSpec allows for configuring DNS clients. (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,19 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) DNSClientSpec allows for configuring DNS clients. (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) DNSClientStatus defines the observed state of DNSClient (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `router_kind` (String) the Kind of the router used to reach the DNS servers.
-- `router_selectors` (List of String) Selects router resources based on the specified Kind.
-- `routers` (List of String) Router(s) to deploy the DNS client on and to reach the DNS servers.
-- `search_list` (List of String) A list of domains to use as the search list.
-- `servers` (List of String) A list of DNS servers, each entry in the list can either be an IP address or an FQDN.
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -88,6 +73,18 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `router_kind` (String) the Kind of the router used to reach the DNS servers.
+- `router_selectors` (List of String) Selects router resources based on the specified Kind.
+- `routers` (List of String) Router(s) to deploy the DNS client on and to reach the DNS servers.
+- `search_list` (List of String) A list of domains to use as the search list.
+- `servers` (List of String) A list of DNS servers, each entry in the list can either be an IP address or an FQDN.
 
 
 <a id="nestedatt--items--status"></a>

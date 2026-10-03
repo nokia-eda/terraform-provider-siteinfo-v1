@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors. (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,18 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors. (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) BannerStatus defines the observed state of Banner (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `login_banner` (String) This is the login banner displayed before a user has logged into the Node.
-- `motd` (String) This is the MOTD banner displayed after a user has logged into the Node.
-- `node_selectors` (List of String) Labe selector to select nodes on which to configure the banners.
-- `nodes` (List of String) List of nodes on which to configure the banners.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -73,6 +62,17 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `login_banner` (String) This is the login banner displayed before a user has logged into the Node.
+- `motd` (String) This is the MOTD banner displayed after a user has logged into the Node.
+- `node_selectors` (List of String) Labe selector to select nodes on which to configure the banners.
+- `nodes` (List of String) List of nodes on which to configure the banners.
 
 
 <a id="nestedatt--status"></a>

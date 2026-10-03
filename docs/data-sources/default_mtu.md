@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) DefaultMTUSpec defines the desired state of DefaultMTU (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,19 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) DefaultMTUSpec defines the desired state of DefaultMTU (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) DefaultMTUStatus defines the observed state of DefaultMTU (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `interface_mtu` (Number) Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.
-- `layer2_subinterface_mtu` (Number) Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.
-- `layer3_mtu` (Number) Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.
-- `node_selectors` (List of String) Label selector to select nodes on which to configure the defaults.
-- `nodes` (List of String) List of nodes on which to configure the defaults.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -74,6 +62,18 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `interface_mtu` (Number) Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.
+- `layer2_subinterface_mtu` (Number) Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.
+- `layer3_mtu` (Number) Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.
+- `node_selectors` (List of String) Label selector to select nodes on which to configure the defaults.
+- `nodes` (List of String) List of nodes on which to configure the defaults.
 
 
 <a id="nestedatt--status"></a>

@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) DNSClientStateSpec defines the desired state of DNSClientState (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,26 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) DNSClientStateSpec defines the desired state of DNSClientState (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) DNSClientStateStatus defines the observed state of DNSClientState (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `node_routers` (Attributes List) List of nodes and routers this resource has been applied to. (see [below for nested schema](#nestedatt--spec--node_routers))
-
-<a id="nestedatt--spec--node_routers"></a>
-### Nested Schema for `spec.node_routers`
-
-Optional:
-
-- `node` (String)
-- `operating_system` (String)
-- `routers` (List of String)
-- `version` (String)
-
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -81,6 +62,25 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `node_routers` (Attributes List) List of nodes and routers this resource has been applied to. (see [below for nested schema](#nestedatt--spec--node_routers))
+
+<a id="nestedatt--spec--node_routers"></a>
+### Nested Schema for `spec.node_routers`
+
+Read-Only:
+
+- `node` (String)
+- `operating_system` (String)
+- `routers` (List of String)
+- `version` (String)
+
 
 
 <a id="nestedatt--status"></a>

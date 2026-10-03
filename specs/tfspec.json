@@ -191,26 +191,26 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "login_banner",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "This is the login banner displayed before a user has logged into the Node."
                                     }
                                 },
                                 {
                                     "name": "motd",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "This is the MOTD banner displayed after a user has logged into the Node."
                                     }
                                 },
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -220,7 +220,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -403,26 +403,26 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "login_banner",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "This is the login banner displayed before a user has logged into the Node."
                                                     }
                                                 },
                                                 {
                                                     "name": "motd",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "This is the MOTD banner displayed after a user has logged into the Node."
                                                     }
                                                 },
                                                 {
                                                     "name": "node_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -432,7 +432,7 @@
                                                 {
                                                     "name": "nodes",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -599,33 +599,33 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "interface_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer."
                                     }
                                 },
                                 {
                                     "name": "layer2_subinterface_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer."
                                     }
                                 },
                                 {
                                     "name": "layer3_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers."
                                     }
                                 },
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -635,7 +635,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -806,33 +806,33 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "interface_mtu",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer."
                                                     }
                                                 },
                                                 {
                                                     "name": "layer2_subinterface_mtu",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer."
                                                     }
                                                 },
                                                 {
                                                     "name": "layer3_mtu",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers."
                                                     }
                                                 },
                                                 {
                                                     "name": "node_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -842,7 +842,7 @@
                                                 {
                                                     "name": "nodes",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -997,19 +997,19 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "the Kind of the router used to reach the DNS servers."
                                     }
                                 },
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1019,7 +1019,7 @@
                                 {
                                     "name": "routers",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1029,7 +1029,7 @@
                                 {
                                     "name": "search_list",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1039,7 +1039,7 @@
                                 {
                                     "name": "servers",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1250,19 +1250,19 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "router_kind",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "the Kind of the router used to reach the DNS servers."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1272,7 +1272,7 @@
                                                 {
                                                     "name": "routers",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1282,7 +1282,7 @@
                                                 {
                                                     "name": "search_list",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1292,7 +1292,7 @@
                                                 {
                                                     "name": "servers",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1487,30 +1487,30 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "node_routers",
                                     "list_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "nested_object": {
                                             "attributes": [
                                                 {
                                                     "name": "node",
                                                     "string": {
-                                                        "computed_optional_required": "optional"
+                                                        "computed_optional_required": "computed"
                                                     }
                                                 },
                                                 {
                                                     "name": "operating_system",
                                                     "string": {
-                                                        "computed_optional_required": "optional"
+                                                        "computed_optional_required": "computed"
                                                     }
                                                 },
                                                 {
                                                     "name": "routers",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         }
@@ -1519,7 +1519,7 @@
                                                 {
                                                     "name": "version",
                                                     "string": {
-                                                        "computed_optional_required": "optional"
+                                                        "computed_optional_required": "computed"
                                                     }
                                                 }
                                             ]
@@ -1691,30 +1691,30 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "node_routers",
                                                     "list_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "nested_object": {
                                                             "attributes": [
                                                                 {
                                                                     "name": "node",
                                                                     "string": {
-                                                                        "computed_optional_required": "optional"
+                                                                        "computed_optional_required": "computed"
                                                                     }
                                                                 },
                                                                 {
                                                                     "name": "operating_system",
                                                                     "string": {
-                                                                        "computed_optional_required": "optional"
+                                                                        "computed_optional_required": "computed"
                                                                     }
                                                                 },
                                                                 {
                                                                     "name": "routers",
                                                                     "list": {
-                                                                        "computed_optional_required": "optional",
+                                                                        "computed_optional_required": "computed",
                                                                         "element_type": {
                                                                             "string": {}
                                                                         }
@@ -1723,7 +1723,7 @@
                                                                 {
                                                                     "name": "version",
                                                                     "string": {
-                                                                        "computed_optional_required": "optional"
+                                                                        "computed_optional_required": "computed"
                                                                     }
                                                                 }
                                                             ]
@@ -1950,12 +1950,12 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1965,7 +1965,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1975,64 +1975,64 @@
                                 {
                                     "name": "srlinux",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "dynamic_load_balancing",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "flowset_size",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The number of flowset entries reserved for each aggregate ECMP group."
                                                             }
                                                         },
                                                         {
                                                             "name": "inactivity_timer_us",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The flow inactivity timer in microseconds."
                                                             }
                                                         },
                                                         {
                                                             "name": "mode",
                                                             "string": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The dynamic load balancing mode."
                                                             }
                                                         },
                                                         {
                                                             "name": "sampling_interval_us",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "The sampling interval of interface state, in microseconds."
                                                             }
                                                         },
                                                         {
                                                             "name": "weighting",
                                                             "single_nested": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "attributes": [
                                                                     {
                                                                         "name": "ingress_traffic_manager_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed",
                                                                             "description": "Weight assigned to ingress Traffic Manager utilization."
                                                                         }
                                                                     },
                                                                     {
                                                                         "name": "port_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed",
                                                                             "description": "Weight assigned to port utilization."
                                                                         }
                                                                     },
                                                                     {
                                                                         "name": "queue_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed",
                                                                             "description": "Weight assigned to queue utilization."
                                                                         }
                                                                     }
@@ -2047,61 +2047,61 @@
                                             {
                                                 "name": "hash_options",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "destination_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include destination IP address in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "destination_port",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include destination port in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "flow_label",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include IPV6 Flow Label in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "label_stack",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include MPLS Label Stack in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "protocol",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include IP protocol in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "source_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include source IP address in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "source_port",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include source port in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "vlan_id",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Include VLAN ID in hash calculation."
                                                             }
                                                         }
@@ -2116,52 +2116,52 @@
                                 {
                                     "name": "sros",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "hash_options_1",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "attributes": [
                                                         {
                                                             "name": "enhanced_eler",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Enables Enhanced eLER Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "enhanced_multicast",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Enables Enhanced Multicast Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "layer4",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Enables Layer 4 Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "lsr_mode",
                                                             "string": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Defines load balancing more for LSR role."
                                                             }
                                                         },
                                                         {
                                                             "name": "service_id",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Enables VLL Service ID Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "system_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed",
                                                                 "description": "Enables use of the System IP address as a hashing input."
                                                             }
                                                         }
@@ -2358,12 +2358,12 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "node_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -2373,7 +2373,7 @@
                                                 {
                                                     "name": "nodes",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -2383,64 +2383,64 @@
                                                 {
                                                     "name": "srlinux",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "dynamic_load_balancing",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "flowset_size",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The number of flowset entries reserved for each aggregate ECMP group."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "inactivity_timer_us",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The flow inactivity timer in microseconds."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "mode",
                                                                             "string": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The dynamic load balancing mode."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "sampling_interval_us",
                                                                             "int64": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "The sampling interval of interface state, in microseconds."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "weighting",
                                                                             "single_nested": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "attributes": [
                                                                                     {
                                                                                         "name": "ingress_traffic_manager_utilization_percent",
                                                                                         "int64": {
-                                                                                            "computed_optional_required": "optional",
+                                                                                            "computed_optional_required": "computed",
                                                                                             "description": "Weight assigned to ingress Traffic Manager utilization."
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         "name": "port_utilization_percent",
                                                                                         "int64": {
-                                                                                            "computed_optional_required": "optional",
+                                                                                            "computed_optional_required": "computed",
                                                                                             "description": "Weight assigned to port utilization."
                                                                                         }
                                                                                     },
                                                                                     {
                                                                                         "name": "queue_utilization_percent",
                                                                                         "int64": {
-                                                                                            "computed_optional_required": "optional",
+                                                                                            "computed_optional_required": "computed",
                                                                                             "description": "Weight assigned to queue utilization."
                                                                                         }
                                                                                     }
@@ -2455,61 +2455,61 @@
                                                             {
                                                                 "name": "hash_options",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "destination_ip",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include destination IP address in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "destination_port",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include destination port in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "flow_label",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include IPV6 Flow Label in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "label_stack",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include MPLS Label Stack in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "protocol",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include IP protocol in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "source_ip",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include source IP address in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "source_port",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include source port in hash calculation."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "vlan_id",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Include VLAN ID in hash calculation."
                                                                             }
                                                                         }
@@ -2524,52 +2524,52 @@
                                                 {
                                                     "name": "sros",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "hash_options_1",
                                                                 "single_nested": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "attributes": [
                                                                         {
                                                                             "name": "enhanced_eler",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Enables Enhanced eLER Load Balancing."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "enhanced_multicast",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Enables Enhanced Multicast Load Balancing."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "layer4",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Enables Layer 4 Load Balancing."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "lsr_mode",
                                                                             "string": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Defines load balancing more for LSR role."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "service_id",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Enables VLL Service ID Load Balancing."
                                                                             }
                                                                         },
                                                                         {
                                                                             "name": "system_ip",
                                                                             "bool": {
-                                                                                "computed_optional_required": "optional",
+                                                                                "computed_optional_required": "computed",
                                                                                 "description": "Enables use of the System IP address as a hashing input."
                                                                             }
                                                                         }
@@ -2800,21 +2800,21 @@
                                 {
                                     "name": "login_banner",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "This is the login banner displayed before a user has logged into the Node."
                                     }
                                 },
                                 {
                                     "name": "motd",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "This is the MOTD banner displayed after a user has logged into the Node."
                                     }
                                 },
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -2824,7 +2824,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3040,7 +3040,7 @@
                                 {
                                     "name": "interface_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
                                         "validators": [
                                             {
@@ -3059,7 +3059,7 @@
                                 {
                                     "name": "layer2_subinterface_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
                                         "validators": [
                                             {
@@ -3078,7 +3078,7 @@
                                 {
                                     "name": "layer3_mtu",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.",
                                         "validators": [
                                             {
@@ -3097,7 +3097,7 @@
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3107,7 +3107,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3330,7 +3330,7 @@
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3340,7 +3340,7 @@
                                 {
                                     "name": "routers",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3350,7 +3350,7 @@
                                 {
                                     "name": "search_list",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3404,7 +3404,19 @@
                                     "name": "health",
                                     "int64": {
                                         "computed_optional_required": "computed_optional",
-                                        "description": "Indicates the health score of the DNSClient."
+                                        "description": "Indicates the health score of the DNSClient.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
                                 {
@@ -3872,7 +3884,7 @@
                                 {
                                     "name": "node_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3882,7 +3894,7 @@
                                 {
                                     "name": "nodes",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3892,17 +3904,17 @@
                                 {
                                     "name": "srlinux",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "dynamic_load_balancing",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "flowset_size",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "The number of flowset entries reserved for each aggregate ECMP group.",
                                                                 "validators": [
                                                                     {
@@ -3921,14 +3933,14 @@
                                                         {
                                                             "name": "inactivity_timer_us",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "The flow inactivity timer in microseconds."
                                                             }
                                                         },
                                                         {
                                                             "name": "mode",
                                                             "string": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "The dynamic load balancing mode.",
                                                                 "validators": [
                                                                     {
@@ -3947,19 +3959,19 @@
                                                         {
                                                             "name": "sampling_interval_us",
                                                             "int64": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "The sampling interval of interface state, in microseconds."
                                                             }
                                                         },
                                                         {
                                                             "name": "weighting",
                                                             "single_nested": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "attributes": [
                                                                     {
                                                                         "name": "ingress_traffic_manager_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed_optional",
                                                                             "description": "Weight assigned to ingress Traffic Manager utilization.",
                                                                             "validators": [
                                                                                 {
@@ -3978,7 +3990,7 @@
                                                                     {
                                                                         "name": "port_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed_optional",
                                                                             "description": "Weight assigned to port utilization.",
                                                                             "validators": [
                                                                                 {
@@ -3997,7 +4009,7 @@
                                                                     {
                                                                         "name": "queue_utilization_percent",
                                                                         "int64": {
-                                                                            "computed_optional_required": "optional",
+                                                                            "computed_optional_required": "computed_optional",
                                                                             "description": "Weight assigned to queue utilization.",
                                                                             "validators": [
                                                                                 {
@@ -4024,61 +4036,61 @@
                                             {
                                                 "name": "hash_options",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "destination_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include destination IP address in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "destination_port",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include destination port in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "flow_label",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include IPV6 Flow Label in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "label_stack",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include MPLS Label Stack in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "protocol",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include IP protocol in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "source_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include source IP address in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "source_port",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include source port in hash calculation."
                                                             }
                                                         },
                                                         {
                                                             "name": "vlan_id",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Include VLAN ID in hash calculation."
                                                             }
                                                         }
@@ -4093,38 +4105,38 @@
                                 {
                                     "name": "sros",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "hash_options_1",
                                                 "single_nested": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "attributes": [
                                                         {
                                                             "name": "enhanced_eler",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Enables Enhanced eLER Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "enhanced_multicast",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Enables Enhanced Multicast Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "layer4",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Enables Layer 4 Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "lsr_mode",
                                                             "string": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Defines load balancing more for LSR role.",
                                                                 "validators": [
                                                                     {
@@ -4143,14 +4155,14 @@
                                                         {
                                                             "name": "service_id",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Enables VLL Service ID Load Balancing."
                                                             }
                                                         },
                                                         {
                                                             "name": "system_ip",
                                                             "bool": {
-                                                                "computed_optional_required": "optional",
+                                                                "computed_optional_required": "computed_optional",
                                                                 "description": "Enables use of the System IP address as a hashing input."
                                                             }
                                                         }

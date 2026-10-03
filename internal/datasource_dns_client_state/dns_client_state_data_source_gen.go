@@ -105,17 +105,17 @@ func DnsClientStateDataSourceSchema(ctx context.Context) schema.Schema {
 						NestedObject: schema.NestedAttributeObject{
 							Attributes: map[string]schema.Attribute{
 								"node": schema.StringAttribute{
-									Optional: true,
+									Computed: true,
 								},
 								"operating_system": schema.StringAttribute{
-									Optional: true,
+									Computed: true,
 								},
 								"routers": schema.ListAttribute{
 									ElementType: types.StringType,
-									Optional:    true,
+									Computed:    true,
 								},
 								"version": schema.StringAttribute{
-									Optional: true,
+									Computed: true,
 								},
 							},
 							CustomType: NodeRoutersType{
@@ -124,7 +124,7 @@ func DnsClientStateDataSourceSchema(ctx context.Context) schema.Schema {
 								},
 							},
 						},
-						Optional:            true,
+						Computed:            true,
 						Description:         "List of nodes and routers this resource has been applied to.",
 						MarkdownDescription: "List of nodes and routers this resource has been applied to.",
 					},
@@ -134,7 +134,7 @@ func DnsClientStateDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "DNSClientStateSpec defines the desired state of DNSClientState",
 				MarkdownDescription: "DNSClientStateSpec defines the desired state of DNSClientState",
 			},

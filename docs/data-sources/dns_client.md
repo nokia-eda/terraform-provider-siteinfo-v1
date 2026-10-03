@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) DNSClientSpec allows for configuring DNS clients. (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,19 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) DNSClientSpec allows for configuring DNS clients. (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) DNSClientStatus defines the observed state of DNSClient (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `router_kind` (String) the Kind of the router used to reach the DNS servers.
-- `router_selectors` (List of String) Selects router resources based on the specified Kind.
-- `routers` (List of String) Router(s) to deploy the DNS client on and to reach the DNS servers.
-- `search_list` (List of String) A list of domains to use as the search list.
-- `servers` (List of String) A list of DNS servers, each entry in the list can either be an IP address or an FQDN.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -74,6 +62,18 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `router_kind` (String) the Kind of the router used to reach the DNS servers.
+- `router_selectors` (List of String) Selects router resources based on the specified Kind.
+- `routers` (List of String) Router(s) to deploy the DNS client on and to reach the DNS servers.
+- `search_list` (List of String) A list of domains to use as the search list.
+- `servers` (List of String) A list of DNS servers, each entry in the list can either be an IP address or an FQDN.
 
 
 <a id="nestedatt--status"></a>

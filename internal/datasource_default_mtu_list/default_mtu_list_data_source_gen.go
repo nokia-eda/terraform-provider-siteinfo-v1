@@ -104,29 +104,29 @@ func DefaultMtuListDataSourceSchema(ctx context.Context) schema.Schema {
 						"spec": schema.SingleNestedAttribute{
 							Attributes: map[string]schema.Attribute{
 								"interface_mtu": schema.Int64Attribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 									MarkdownDescription: "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 								},
 								"layer2_subinterface_mtu": schema.Int64Attribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 									MarkdownDescription: "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 								},
 								"layer3_mtu": schema.Int64Attribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.",
 									MarkdownDescription: "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.",
 								},
 								"node_selectors": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "Label selector to select nodes on which to configure the defaults.",
 									MarkdownDescription: "Label selector to select nodes on which to configure the defaults.",
 								},
 								"nodes": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "List of nodes on which to configure the defaults.",
 									MarkdownDescription: "List of nodes on which to configure the defaults.",
 								},
@@ -136,7 +136,7 @@ func DefaultMtuListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "DefaultMTUSpec defines the desired state of DefaultMTU",
 							MarkdownDescription: "DefaultMTUSpec defines the desired state of DefaultMTU",
 						},

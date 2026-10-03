@@ -128,12 +128,14 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 					"node_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Label selector to select nodes on which to configure the parameters.",
 						MarkdownDescription: "Label selector to select nodes on which to configure the parameters.",
 					},
 					"nodes": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "List of nodes on which to configure the parameteers.",
 						MarkdownDescription: "List of nodes on which to configure the parameteers.",
 					},
@@ -143,6 +145,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 								Attributes: map[string]schema.Attribute{
 									"flowset_size": schema.Int64Attribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "The number of flowset entries reserved for each aggregate ECMP group.",
 										MarkdownDescription: "The number of flowset entries reserved for each aggregate ECMP group.",
 										Validators: []validator.Int64{
@@ -160,11 +163,13 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 									"inactivity_timer_us": schema.Int64Attribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "The flow inactivity timer in microseconds.",
 										MarkdownDescription: "The flow inactivity timer in microseconds.",
 									},
 									"mode": schema.StringAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "The dynamic load balancing mode.",
 										MarkdownDescription: "The dynamic load balancing mode.",
 										Validators: []validator.String{
@@ -177,6 +182,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 									"sampling_interval_us": schema.Int64Attribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "The sampling interval of interface state, in microseconds.",
 										MarkdownDescription: "The sampling interval of interface state, in microseconds.",
 									},
@@ -184,6 +190,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 										Attributes: map[string]schema.Attribute{
 											"ingress_traffic_manager_utilization_percent": schema.Int64Attribute{
 												Optional:            true,
+												Computed:            true,
 												Description:         "Weight assigned to ingress Traffic Manager utilization.",
 												MarkdownDescription: "Weight assigned to ingress Traffic Manager utilization.",
 												Validators: []validator.Int64{
@@ -192,6 +199,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 											},
 											"port_utilization_percent": schema.Int64Attribute{
 												Optional:            true,
+												Computed:            true,
 												Description:         "Weight assigned to port utilization.",
 												MarkdownDescription: "Weight assigned to port utilization.",
 												Validators: []validator.Int64{
@@ -200,6 +208,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 											},
 											"queue_utilization_percent": schema.Int64Attribute{
 												Optional:            true,
+												Computed:            true,
 												Description:         "Weight assigned to queue utilization.",
 												MarkdownDescription: "Weight assigned to queue utilization.",
 												Validators: []validator.Int64{
@@ -213,6 +222,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 											},
 										},
 										Optional:            true,
+										Computed:            true,
 										Description:         "Weighting factors for dynamic load balancing.",
 										MarkdownDescription: "Weighting factors for dynamic load balancing.",
 									},
@@ -223,6 +233,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 								},
 								Optional:            true,
+								Computed:            true,
 								Description:         "Dynamic Load Balancer configuration.",
 								MarkdownDescription: "Dynamic Load Balancer configuration.",
 							},
@@ -230,41 +241,49 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 								Attributes: map[string]schema.Attribute{
 									"destination_ip": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include destination IP address in hash calculation.",
 										MarkdownDescription: "Include destination IP address in hash calculation.",
 									},
 									"destination_port": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include destination port in hash calculation.",
 										MarkdownDescription: "Include destination port in hash calculation.",
 									},
 									"flow_label": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include IPV6 Flow Label in hash calculation.",
 										MarkdownDescription: "Include IPV6 Flow Label in hash calculation.",
 									},
 									"label_stack": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include MPLS Label Stack in hash calculation.",
 										MarkdownDescription: "Include MPLS Label Stack in hash calculation.",
 									},
 									"protocol": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include IP protocol in hash calculation.",
 										MarkdownDescription: "Include IP protocol in hash calculation.",
 									},
 									"source_ip": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include source IP address in hash calculation.",
 										MarkdownDescription: "Include source IP address in hash calculation.",
 									},
 									"source_port": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include source port in hash calculation.",
 										MarkdownDescription: "Include source port in hash calculation.",
 									},
 									"vlan_id": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Include VLAN ID in hash calculation.",
 										MarkdownDescription: "Include VLAN ID in hash calculation.",
 									},
@@ -275,6 +294,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 								},
 								Optional:            true,
+								Computed:            true,
 								Description:         "Hashing options.",
 								MarkdownDescription: "Hashing options.",
 							},
@@ -285,6 +305,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 							},
 						},
 						Optional:            true,
+						Computed:            true,
 						Description:         "SR Linux Load Balancer configuration.",
 						MarkdownDescription: "SR Linux Load Balancer configuration.",
 					},
@@ -294,21 +315,25 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 								Attributes: map[string]schema.Attribute{
 									"enhanced_eler": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Enables Enhanced eLER Load Balancing.",
 										MarkdownDescription: "Enables Enhanced eLER Load Balancing.",
 									},
 									"enhanced_multicast": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Enables Enhanced Multicast Load Balancing.",
 										MarkdownDescription: "Enables Enhanced Multicast Load Balancing.",
 									},
 									"layer4": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Enables Layer 4 Load Balancing.",
 										MarkdownDescription: "Enables Layer 4 Load Balancing.",
 									},
 									"lsr_mode": schema.StringAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Defines load balancing more for LSR role.",
 										MarkdownDescription: "Defines load balancing more for LSR role.",
 										Validators: []validator.String{
@@ -325,11 +350,13 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 									"service_id": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Enables VLL Service ID Load Balancing.",
 										MarkdownDescription: "Enables VLL Service ID Load Balancing.",
 									},
 									"system_ip": schema.BoolAttribute{
 										Optional:            true,
+										Computed:            true,
 										Description:         "Enables use of the System IP address as a hashing input.",
 										MarkdownDescription: "Enables use of the System IP address as a hashing input.",
 									},
@@ -340,6 +367,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 									},
 								},
 								Optional:            true,
+								Computed:            true,
 								Description:         "Hashing options.",
 								MarkdownDescription: "Hashing options.",
 							},
@@ -350,6 +378,7 @@ func SystemLoadBalancerResourceSchema(ctx context.Context) schema.Schema {
 							},
 						},
 						Optional:            true,
+						Computed:            true,
 						Description:         "SROS Load Balancer configuration.",
 						MarkdownDescription: "SROS Load Balancer configuration.",
 					},

@@ -5,6 +5,7 @@ package resource_dns_client
 import (
 	"context"
 	"fmt"
+	"github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
 	"github.com/hashicorp/terraform-plugin-framework-validators/listvalidator"
 	"github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
 	"github.com/hashicorp/terraform-plugin-framework/attr"
@@ -140,18 +141,21 @@ func DnsClientResourceSchema(ctx context.Context) schema.Schema {
 					"router_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Selects router resources based on the specified Kind.",
 						MarkdownDescription: "Selects router resources based on the specified Kind.",
 					},
 					"routers": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Router(s) to deploy the DNS client on and to reach the DNS servers.",
 						MarkdownDescription: "Router(s) to deploy the DNS client on and to reach the DNS servers.",
 					},
 					"search_list": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "A list of domains to use as the search list.",
 						MarkdownDescription: "A list of domains to use as the search list.",
 						Validators: []validator.List{
@@ -184,6 +188,9 @@ func DnsClientResourceSchema(ctx context.Context) schema.Schema {
 						Computed:            true,
 						Description:         "Indicates the health score of the DNSClient.",
 						MarkdownDescription: "Indicates the health score of the DNSClient.",
+						Validators: []validator.Int64{
+							int64validator.AtMost(100),
+						},
 					},
 					"health_score_reason": schema.StringAttribute{
 						Optional:            true,

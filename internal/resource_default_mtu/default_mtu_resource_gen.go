@@ -127,6 +127,7 @@ func DefaultMtuResourceSchema(ctx context.Context) schema.Schema {
 				Attributes: map[string]schema.Attribute{
 					"interface_mtu": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 						MarkdownDescription: "Configures the Default MTU value for Ethernet interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 						Validators: []validator.Int64{
@@ -135,6 +136,7 @@ func DefaultMtuResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"layer2_subinterface_mtu": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 						MarkdownDescription: "Configures the Default MTU value for Layer 2 (bridged) interfaces. Includes Ethernet headers but excludes 4-byte FCS trailer.",
 						Validators: []validator.Int64{
@@ -143,6 +145,7 @@ func DefaultMtuResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"layer3_mtu": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.",
 						MarkdownDescription: "Configures the Default IP MTU value for Layer 3 interfaces. Includes IP headers but excludes Ethernet headers.",
 						Validators: []validator.Int64{
@@ -152,12 +155,14 @@ func DefaultMtuResourceSchema(ctx context.Context) schema.Schema {
 					"node_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Label selector to select nodes on which to configure the defaults.",
 						MarkdownDescription: "Label selector to select nodes on which to configure the defaults.",
 					},
 					"nodes": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "List of nodes on which to configure the defaults.",
 						MarkdownDescription: "List of nodes on which to configure the defaults.",
 					},

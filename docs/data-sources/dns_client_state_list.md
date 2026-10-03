@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) DNSClientStateSpec defines the desired state of DNSClientState (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,26 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) DNSClientStateSpec defines the desired state of DNSClientState (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) DNSClientStateStatus defines the observed state of DNSClientState (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `node_routers` (Attributes List) List of nodes and routers this resource has been applied to. (see [below for nested schema](#nestedatt--items--spec--node_routers))
-
-<a id="nestedatt--items--spec--node_routers"></a>
-### Nested Schema for `items.spec.node_routers`
-
-Optional:
-
-- `node` (String)
-- `operating_system` (String)
-- `routers` (List of String)
-- `version` (String)
-
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -95,6 +73,25 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `node_routers` (Attributes List) List of nodes and routers this resource has been applied to. (see [below for nested schema](#nestedatt--items--spec--node_routers))
+
+<a id="nestedatt--items--spec--node_routers"></a>
+### Nested Schema for `items.spec.node_routers`
+
+Read-Only:
+
+- `node` (String)
+- `operating_system` (String)
+- `routers` (List of String)
+- `version` (String)
+
 
 
 <a id="nestedatt--items--status"></a>

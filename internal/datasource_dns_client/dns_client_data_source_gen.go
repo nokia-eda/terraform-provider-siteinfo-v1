@@ -102,31 +102,31 @@ func DnsClientDataSourceSchema(ctx context.Context) schema.Schema {
 			"spec": schema.SingleNestedAttribute{
 				Attributes: map[string]schema.Attribute{
 					"router_kind": schema.StringAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "the Kind of the router used to reach the DNS servers.",
 						MarkdownDescription: "the Kind of the router used to reach the DNS servers.",
 					},
 					"router_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "Selects router resources based on the specified Kind.",
 						MarkdownDescription: "Selects router resources based on the specified Kind.",
 					},
 					"routers": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "Router(s) to deploy the DNS client on and to reach the DNS servers.",
 						MarkdownDescription: "Router(s) to deploy the DNS client on and to reach the DNS servers.",
 					},
 					"search_list": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "A list of domains to use as the search list.",
 						MarkdownDescription: "A list of domains to use as the search list.",
 					},
 					"servers": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "A list of DNS servers, each entry in the list can either be an IP address or an FQDN.",
 						MarkdownDescription: "A list of DNS servers, each entry in the list can either be an IP address or an FQDN.",
 					},
@@ -136,7 +136,7 @@ func DnsClientDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "DNSClientSpec allows for configuring DNS clients.",
 				MarkdownDescription: "DNSClientSpec allows for configuring DNS clients.",
 			},

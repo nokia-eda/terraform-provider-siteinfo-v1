@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors. (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,18 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors. (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) BannerStatus defines the observed state of Banner (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `login_banner` (String) This is the login banner displayed before a user has logged into the Node.
-- `motd` (String) This is the MOTD banner displayed after a user has logged into the Node.
-- `node_selectors` (List of String) Labe selector to select nodes on which to configure the banners.
-- `nodes` (List of String) List of nodes on which to configure the banners.
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -87,6 +73,17 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `login_banner` (String) This is the login banner displayed before a user has logged into the Node.
+- `motd` (String) This is the MOTD banner displayed after a user has logged into the Node.
+- `node_selectors` (List of String) Labe selector to select nodes on which to configure the banners.
+- `nodes` (List of String) List of nodes on which to configure the banners.
 
 
 <a id="nestedatt--items--status"></a>

@@ -104,24 +104,24 @@ func BannerListDataSourceSchema(ctx context.Context) schema.Schema {
 						"spec": schema.SingleNestedAttribute{
 							Attributes: map[string]schema.Attribute{
 								"login_banner": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "This is the login banner displayed before a user has logged into the Node.",
 									MarkdownDescription: "This is the login banner displayed before a user has logged into the Node.",
 								},
 								"motd": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "This is the MOTD banner displayed after a user has logged into the Node.",
 									MarkdownDescription: "This is the MOTD banner displayed after a user has logged into the Node.",
 								},
 								"node_selectors": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "Labe selector to select nodes on which to configure the banners.",
 									MarkdownDescription: "Labe selector to select nodes on which to configure the banners.",
 								},
 								"nodes": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "List of nodes on which to configure the banners.",
 									MarkdownDescription: "List of nodes on which to configure the banners.",
 								},
@@ -131,7 +131,7 @@ func BannerListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors.",
 							MarkdownDescription: "BannerSpec allows the configuration of login and MOTD (Message of the Day) banners on selected nodes. The banners can be applied to specific nodes or selected using label selectors.",
 						},
